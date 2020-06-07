@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maarten Beeckmans</title>
+    <link>http://maartenbeeckmans.github.io/</link>
+    <description>Recent content on Maarten Beeckmans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jun 2020 21:52:38 +0200</lastBuildDate>
+    
+	<atom:link href="http://maartenbeeckmans.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux as daily driver</title>
+      <link>http://maartenbeeckmans.github.io/post/linux/</link>
+      <pubDate>Fri, 05 Jun 2020 21:52:38 +0200</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/post/linux/</guid>
+      <description>Using Linux as daily dri</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://maartenbeeckmans.github.io/about/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/about/</guid>
+      <description>I am Maarten Beeckmans.</description>
+    </item>
+    
+    <item>
+      <title>Vagrant Libvirt Skeleton</title>
+      <link>http://maartenbeeckmans.github.io/zone/vagrant_libvirt_skeleton/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/zone/vagrant_libvirt_skeleton/</guid>
+      <description>A Vagrant skeleton to set up Virtual Machines on Libvirt with vagrant. This skeleton uses scripts for provisioning the Virtual Machines.
+Link to GitHub</description>
+    </item>
+    
+    <item>
+      <title>Puppet configuration</title>
+      <link>http://maartenbeeckmans.github.io/zone/puppet/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/zone/puppet/</guid>
+      <description>My personal Puppet roles and profiles.
+Link to Puppet roles on GitHub
+Link to Puppet profiles on Github</description>
+    </item>
+    
+    <item>
+      <title>Vagrant Puppet Skeleton</title>
+      <link>http://maartenbeeckmans.github.io/zone/vagrant_puppet_skeleton/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/zone/vagrant_puppet_skeleton/</guid>
+      <description>A simple vagrant skeleton to test Puppet code on Virtual Machines. This skeleton does not require a Puppet server.
+Link to GitHub</description>
+    </item>
+    
+    <item>
+      <title>Ansible role bitwarden</title>
+      <link>http://maartenbeeckmans.github.io/zone/ansible_bitwarden/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/zone/ansible_bitwarden/</guid>
+      <description>Ansible role to set up an automated installation of the Bitwarden Open Source Password manager in docker.
+Link to GitHub</description>
+    </item>
+    
+    <item>
+      <title>Dotfiles</title>
+      <link>http://maartenbeeckmans.github.io/zone/dotfiles/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/zone/dotfiles/</guid>
+      <description>My personal Linux Dotfiles. These dotfiles can be backed up and restored using scripts.
+Link to GitHub</description>
+    </item>
+    
+  </channel>
+</rss>

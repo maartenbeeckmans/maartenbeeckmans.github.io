@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/post/linux/</loc>
+    <lastmod>2020-06-05T21:52:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/</loc>
+    <lastmod>2020-06-05T21:52:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/post/</loc>
+    <lastmod>2020-06-05T21:52:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/about/</loc>
+    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/zone/vagrant_libvirt_skeleton/</loc>
+    <lastmod>2020-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/zone/</loc>
+    <lastmod>2020-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/zone/puppet/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/zone/vagrant_puppet_skeleton/</loc>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/zone/ansible_bitwarden/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/zone/dotfiles/</loc>
+    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/tags/</loc>
+  </url>
+  
+</urlset>
