@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Maarten Beeckmans</title>
+    <link>http://maartenbeeckmans.github.io/tags/git/</link>
+    <description>Recent content in git on Maarten Beeckmans</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2020 10:37:05 +0200</lastBuildDate>
+    
+	<atom:link href="http://maartenbeeckmans.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using VimWiki and git to manage notes</title>
+      <link>http://maartenbeeckmans.github.io/post/vimwiki/</link>
+      <pubDate>Wed, 10 Jun 2020 10:37:05 +0200</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/post/vimwiki/</guid>
+      <description>This post explains how I manage my notes with VimWiki and a git repository.
+VimWiki Installation The only requirement on the system that you want to use VimWiki on is that vim is installed. For VimWiki to work, the following code must be added to your vimrc. First, the following settings must be added to you .vimrc file so VimWiki will work properly.
+set nocompatiblefiletype plugin onsyntax onNow you must install the VimWiki vim plugin, in this example I use Vim Plug.</description>
+    </item>
+    
+  </channel>
+</rss>

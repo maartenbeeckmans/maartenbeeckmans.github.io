@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Maarten Beeckmans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2020 10:37:05 +0200</lastBuildDate>
     
 	<atom:link href="http://maartenbeeckmans.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>http://maartenbeeckmans.github.io/tags/git/</link>
+      <pubDate>Wed, 10 Jun 2020 10:37:05 +0200</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>http://maartenbeeckmans.github.io/tags/vim/</link>
+      <pubDate>Wed, 10 Jun 2020 10:37:05 +0200</pubDate>
+      
+      <guid>http://maartenbeeckmans.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

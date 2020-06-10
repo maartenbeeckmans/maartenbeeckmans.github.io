@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://maartenbeeckmans.github.io/tags/git/</loc>
+    <lastmod>2020-06-10T10:37:05+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://maartenbeeckmans.github.io/</loc>
     <lastmod>2020-06-10T10:37:05+02:00</lastmod>
   </url>
@@ -13,7 +18,17 @@
   </url>
   
   <url>
+    <loc>http://maartenbeeckmans.github.io/tags/</loc>
+    <lastmod>2020-06-10T10:37:05+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://maartenbeeckmans.github.io/post/vimwiki/</loc>
+    <lastmod>2020-06-10T10:37:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maartenbeeckmans.github.io/tags/vim/</loc>
     <lastmod>2020-06-10T10:37:05+02:00</lastmod>
   </url>
   
@@ -54,10 +69,6 @@
   
   <url>
     <loc>http://maartenbeeckmans.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://maartenbeeckmans.github.io/tags/</loc>
   </url>
   
 </urlset>
