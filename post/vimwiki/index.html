@@ -1,0 +1,221 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Maarten Beeckmans - Using VimWiki and git to manage notes </title>
+    
+    
+    <meta content="Maarten Beeckmans" name="keywords">
+    
+    <meta content="Maarten Beeckmans - This post explains how I manage my notes with VimWiki and a git repository.
+VimWiki Installation The only requirement on the system that you want to use VimWiki on is that vim is installed. For VimWiki to work, the following code must be added to your vimrc. First, the following settings must be added to you .vimrc file so VimWiki will work properly.
+set nocompatiblefiletype plugin onsyntax onNow you must install the VimWiki vim plugin, in this example I use Vim Plug." name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" href="/self/css/default.css">
+    <script src="/layui/layui.js"></script>
+
+    <link rel="stylesheet" async href="/self/css/markdown.min.css">
+    <link rel="stylesheet" async href="/self/css/gallery.css">
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <script async src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" integrity="sha256-h2tMEmhemR2IN4wbbdNjj9LaDIjzwk2hralQwfJmBOE=" crossorigin="anonymous"></script></head>
+
+<body>
+    
+    <header class="layui-header layui-bg-cyan">
+
+    
+    
+    <a class="nav-self-logo" href="/">
+        Maarten Beeckmans
+    </a>
+
+    <ul class="layui-nav layui-layout-right layui-bg-cyan" lay-filter="">
+        
+        
+        <li class="layui-nav-item" id="nav_big"><a href="/post/">Posts</a></li>
+        
+
+        
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/zone/">Zone</a></li>
+            
+                <li class="layui-nav-item" id="nav_big"><a href="/about/">About</a></li>
+            
+        
+
+        
+        <li class="layui-nav-item" id="nav_small">
+            <a href="javascript:;">
+                <i class="layui-icon layui-icon-app" style="font-size: 24px;"></i>
+            </a>
+
+            <dl class="layui-nav-child">
+                
+                <dd><a href="/post/">Posts</a></dd>
+                
+
+                
+                    
+                        <dd><a href="/zone/">Zone</a></dd>
+                    
+                        <dd><a href="/about/">About</a></dd>
+                    
+                
+            </dl>
+        </li>
+    </ul>
+</header>
+
+<script>
+layui.use('element', function(){
+  var element = layui.element;
+});
+</script>
+        <div id="content" style="min-height:80%">
+<div class="layui-container" style="margin-bottom: 10px">
+    
+
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-md8 layui-col-sm12 layui-col-xs12">
+            <div class="layui-card single-card">
+                <br />
+                <blockquote class="self-elem-quote  markdown-body single-title" >
+                    <h1>Using VimWiki and git to manage notes</h1>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2020-06-10</span>
+
+    
+    
+
+    
+
+    
+
+    
+    
+</h3>
+                </blockquote>
+                <div class="layui-card-body markdown-body single-content">
+                    <p>This post explains how I manage my notes with VimWiki and a git repository.</p>
+<h1 id="vimwiki-installation">VimWiki Installation</h1>
+<p>The only requirement on the system that you want to use VimWiki on is that vim is installed. For VimWiki to work, the following code must be added to your vimrc. First, the following settings must be added to you <code>.vimrc</code> file so VimWiki will work properly.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">set</span> <span style="color:#a6e22e">nocompatible</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">filetype</span> <span style="color:#a6e22e">plugin</span> <span style="color:#a6e22e">on</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">syntax</span> <span style="color:#a6e22e">on</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Now you must install the VimWiki vim plugin, in this example I use Vim Plug. More information about Vim Plug can be found <a href="https://github.com/junegunn/vim-plug">here</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">begin</span>(<span style="color:#e6db74">&#39;~/.vim/plugged&#39;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  <span style="color:#a6e22e">Plug</span> <span style="color:#e6db74">&#39;vimwiki/vimwiki&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">call</span> <span style="color:#a6e22e">plug</span>#<span style="color:#a6e22e">end</span>()<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>To install the specified plugins, run the following vim command: <code>:PlugInstall</code></p>
+<p>After the installation of the required plugin, VimWiki can be configured. The only configuration that I am using is the location of the VimWiki files. To set the path, add the following configuration to your <code>.vimrc</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">vimwiki_list</span> = [{<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  \ <span style="color:#e6db74">&#39;path&#39;</span>: <span style="color:#e6db74">&#39;~/vimwiki/&#39;</span>,<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  \ }]<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>I use the VimWiki syntax. With the VimWiki syntax, it is possible to use the build-in HTML converter. If you want to use Markdown for your VimWiki files, add te following code to your <code>.vimrc</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">g</span>:<span style="color:#a6e22e">vimwiki_list</span> = [{<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  \ <span style="color:#e6db74">&#39;path&#39;</span>: <span style="color:#e6db74">&#39;~/vimwiki/&#39;</span>,<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  \ <span style="color:#e6db74">&#39;syntax&#39;</span>: <span style="color:#e6db74">&#39;markdown&#39;</span>,<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  \ <span style="color:#e6db74">&#39;ext&#39;</span>: <span style="color:#e6db74">&#39;.md&#39;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  \ }]<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>To see my <code>.vimrc</code> file, you can check my GitHub repository [maartenbeeckmans/dotfiles](<a href="https://github.com/maartenbeeckmans/dotfiles%5D">https://github.com/maartenbeeckmans/dotfiles]</a>.</p>
+<p>For convenience, I have added an alias to my <code>.zshrc</code> to open my VimWiki index.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias vimwiki<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vim -c VimwikiIndex&#34;</span>
+</code></pre></div><h1 id="setting-up-git-repository">Setting up Git repository</h1>
+<p>To manage VimWiki in a git repository. First create an empty git repository on GitHub or Gitlab. When te repository is created, go to your VimWiki folder and run the following commands:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+git add .
+git commit -m <span style="color:#e6db74">&#34;initial commit&#34;</span>
+git remote add origin git@github.com:&lt;git username&gt;/&lt;repo name&gt;.git
+git push -u origin master
+</code></pre></div><h1 id="vimwiki-syntax-overview">VimWiki syntax overview</h1>
+<pre><code class="language-wiki" data-lang="wiki">= Header1 =
+== Header2 ==
+=== Header3 ===
+
+
+*bold* -- bold text
+_italic_ -- italic text
+
+[[wiki link]] -- wiki link
+[[wiki link|description]] -- wiki link with description
+
+* bullet list item
+  - bullet list item
+</code></pre><blockquote>
+<p>For more syntax elements, see <code>:h vimwiki-syntax</code></p>
+</blockquote>
+<h1 id="using-vimwiki">Using VimWiki</h1>
+<p>To launch VimWiki run the command <code>vimwiki</code> (if you did set the alias).</p>
+<p>Write your notes in the vimwiki syntax as described above.</p>
+<p>To create a link, press <code>&lt;Enter&gt;</code> when on a word, to return to the parent document, press <code>&lt;Backspace&gt;</code>.</p>
+<p>For creating the HTML documents, run the vim command <code>:VimwikiAll2HTML</code>.</p>
+<p>To see all the key bindings and commands, see the vim help pages (<code>:h vimwiki-mappings</code> and <code>:h vimwiki-commands</code>).</p>
+<p>More information about VimWiki can be found <a href="https://github.com/vimwiki/vimwiki">here</a></p>
+</div>
+            </div>
+        </div>
+
+        <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
+            
+
+            <div class="layui-card single-card">
+                <h2 class="single-title">Recent Posts</h2>
+            
+                
+                <div style="margin-left: 10px;">
+                    <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+                    <a href="/post/vimwiki/">
+                        <h3 class="">Using VimWiki and git to manage notes</h3>
+                    </a>
+                    <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2020-06-10</span>
+
+    
+    
+
+    
+
+    
+
+    
+    
+</h3>
+                    </blockquote>
+                </div>
+                
+            
+            <br />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        </div><footer>
+    
+    
+    <div class="layui-container">
+        <p class="copyright">Copyright 2020 - Maarten Beeckmans</p>
+    </div>
+</footer>
+</body>
+</html>

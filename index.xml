@@ -6,18 +6,20 @@
     <description>Recent content on Maarten Beeckmans</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2020 21:52:38 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 10:37:05 +0200</lastBuildDate>
     
 	<atom:link href="http://maartenbeeckmans.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Linux as daily driver</title>
-      <link>http://maartenbeeckmans.github.io/post/linux/</link>
-      <pubDate>Fri, 05 Jun 2020 21:52:38 +0200</pubDate>
+      <title>Using VimWiki and git to manage notes</title>
+      <link>http://maartenbeeckmans.github.io/post/vimwiki/</link>
+      <pubDate>Wed, 10 Jun 2020 10:37:05 +0200</pubDate>
       
-      <guid>http://maartenbeeckmans.github.io/post/linux/</guid>
-      <description>Using Linux as daily dri</description>
+      <guid>http://maartenbeeckmans.github.io/post/vimwiki/</guid>
+      <description>This post explains how I manage my notes with VimWiki and a git repository.
+VimWiki Installation The only requirement on the system that you want to use VimWiki on is that vim is installed. For VimWiki to work, the following code must be added to your vimrc. First, the following settings must be added to you .vimrc file so VimWiki will work properly.
+set nocompatiblefiletype plugin onsyntax onNow you must install the VimWiki vim plugin, in this example I use Vim Plug.</description>
     </item>
     
     <item>
@@ -26,7 +28,8 @@
       <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://maartenbeeckmans.github.io/about/</guid>
-      <description>I am Maarten Beeckmans.</description>
+      <description>I am Maarten Beeckmans, born the 24th of February in Bruges. I live in Aalter.
+In high school, the first 4 years I have followed science at the Emmausinstituut in Aalter. After that I did 2 years of Networks and IT at the Sint-Jozefsinstituut in Bruges. After this, I followed the course Applied Computer Scients at University College Ghent. In this training, I specialized in network and system management.</description>
     </item>
     
     <item>
